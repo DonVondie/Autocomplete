@@ -1,0 +1,487 @@
+Question 2 Data:
+
+BruteForce for k=3
+
+Opening - /Users/rvonders/workspace/autocomplete/data/wiktionary.txt.
+Benchmarking BruteAutocomplete...
+Found 10000 words
+Time to initialize - 0.006201372
+Time for topMatch("") - 1.0273871E-4
+Time for topMatch("robe") - 1.15549991E-4
+Time for topMatch("r") - 8.2055404E-5
+Time for topMatch("ro") - 1.10742487E-4
+Time for topMatch("notarealword") - 6.5611966E-5
+Time for topKMatches("", 1) -  1.12872595E-4
+Time for topKMatches("", 4) -  6.9029832E-5
+Time for topKMatches("", 7) -  7.6448955E-5
+Time for topKMatches("robe", 1) -  1.39473286E-4
+Time for topKMatches("robe", 4) -  1.18106907E-4
+Time for topKMatches("robe", 7) -  1.00636441E-4
+Time for topKMatches("r", 1) -  1.2883032E-4
+Time for topKMatches("r", 4) -  1.03247651E-4
+Time for topKMatches("r", 7) -  1.12342257E-4
+Time for topKMatches("ro", 1) -  1.03911889E-4
+Time for topKMatches("ro", 4) -  1.02929751E-4
+Time for topKMatches("ro", 7) -  1.01723735E-4
+Time for topKMatches("notarealword", 1) -  9.4818865E-5
+Time for topKMatches("notarealword", 4) -  8.3842301E-5
+Time for topKMatches("notarealword", 7) -  1.03737715E-4
+
+BruteForce for k=6
+Opening - /Users/rvonders/workspace/autocomplete/data/wiktionary.txt.
+Benchmarking BruteAutocomplete...
+Found 10000 words
+Time to initialize - 0.005266405
+Time for topMatch("") - 1.45233086E-4
+Time for topMatch("robe") - 9.0721409E-5
+Time for topMatch("r") - 7.5790682E-5
+Time for topMatch("ro") - 7.7552683E-5
+Time for topMatch("notarealword") - 7.6500768E-5
+Time for topKMatches("", 1) -  1.19364731E-4
+Time for topKMatches("", 4) -  6.4474332E-5
+Time for topKMatches("", 7) -  6.9699014E-5
+Time for topKMatches("robe", 1) -  1.06110076E-4
+Time for topKMatches("robe", 4) -  7.3801056E-5
+Time for topKMatches("robe", 7) -  9.2500941E-5
+Time for topKMatches("r", 1) -  8.6358047E-5
+Time for topKMatches("r", 4) -  8.799708E-5
+Time for topKMatches("r", 7) -  8.1931915E-5
+Time for topKMatches("ro", 1) -  7.2052093E-5
+Time for topKMatches("ro", 4) -  7.8648461E-5
+Time for topKMatches("ro", 7) -  8.3557867E-5
+Time for topKMatches("notarealword", 1) -  5.220662E-5
+Time for topKMatches("notarealword", 4) -  5.4073232E-5
+Time for topKMatches("notarealword", 7) -  5.3480601E-5
+
+BruteForce for k=12
+
+Opening - /Users/rvonders/workspace/autocomplete/data/wiktionary.txt.
+Benchmarking BruteAutocomplete...
+Found 10000 words
+Time to initialize - 0.00515066
+Time for topMatch("") - 1.1400425E-4
+Time for topMatch("robe") - 1.10822509E-4
+Time for topMatch("r") - 9.4970616E-5
+Time for topMatch("ro") - 7.802631E-5
+Time for topMatch("notarealword") - 6.5745629E-5
+Time for topKMatches("", 1) -  1.33514534E-4
+Time for topKMatches("", 4) -  6.67783E-5
+Time for topKMatches("", 7) -  7.4207806E-5
+Time for topKMatches("robe", 1) -  9.6056491E-5
+Time for topKMatches("robe", 4) -  9.5293779E-5
+Time for topKMatches("robe", 7) -  9.0170489E-5
+Time for topKMatches("r", 1) -  8.2468497E-5
+Time for topKMatches("r", 4) -  7.2523349E-5
+Time for topKMatches("r", 7) -  8.1578973E-5
+Time for topKMatches("ro", 1) -  7.6777719E-5
+Time for topKMatches("ro", 4) -  9.945028E-5
+Time for topKMatches("ro", 7) -  8.7821051E-5
+Time for topKMatches("notarealword", 1) -  5.4068792E-5
+Time for topKMatches("notarealword", 4) -  5.1884786E-5
+Time for topKMatches("notarealword", 7) -  7.3785474E-5
+
+
+For some reason the smallest value of k actually runs the slowest
+but the successive doubling of the k value does not significantly effect
+the runtime. 
+
+BinarySearch for k = 3
+
+Opening - /Users/rvonders/workspace/autocomplete/data/wiktionary.txt.
+Benchmarking BinarySearchAutocomplete...
+Found 10000 words
+Time to initialize - 0.042496907
+Time for topMatch("") - 6.2063976E-5
+Time for topMatch("robe") - 8.278205E-6
+Time for topMatch("r") - 8.538462E-6
+Time for topMatch("ro") - 9.9282E-6
+Time for topMatch("notarealword") - 9.122358E-6
+Time for topKMatches("", 1) -  5.51739385E-4
+Time for topKMatches("", 4) -  4.97695296E-4
+Time for topKMatches("", 7) -  4.94964386E-4
+Time for topKMatches("robe", 1) -  2.690156E-6
+Time for topKMatches("robe", 4) -  2.173411E-6
+Time for topKMatches("robe", 7) -  3.414232E-6
+Time for topKMatches("r", 1) -  1.8284741E-5
+Time for topKMatches("r", 4) -  1.6200252E-5
+Time for topKMatches("r", 7) -  1.6870127E-5
+Time for topKMatches("ro", 1) -  5.560232E-6
+Time for topKMatches("ro", 4) -  5.118393E-6
+Time for topKMatches("ro", 7) -  6.429645E-6
+Time for topKMatches("notarealword", 1) -  5.360352E-6
+Time for topKMatches("notarealword", 4) -  1.810122E-6
+Time for topKMatches("notarealword", 7) -  1.597616E-6
+
+BinarySearch for k=6
+
+Opening - /Users/rvonders/workspace/autocomplete/data/wiktionary.txt.
+Benchmarking BinarySearchAutocomplete...
+Found 10000 words
+Time to initialize - 0.038792461
+Time for topMatch("") - 6.3704912E-5
+Time for topMatch("robe") - 1.0984008E-5
+Time for topMatch("r") - 7.179533E-6
+Time for topMatch("ro") - 5.814805E-6
+Time for topMatch("notarealword") - 2.825497E-6
+Time for topKMatches("", 1) -  5.83700169E-4
+Time for topKMatches("", 4) -  4.94501444E-4
+Time for topKMatches("", 7) -  5.00904219E-4
+Time for topKMatches("robe", 1) -  3.778741E-6
+Time for topKMatches("robe", 4) -  2.061638E-6
+Time for topKMatches("robe", 7) -  3.613255E-6
+Time for topKMatches("r", 1) -  2.6132627E-5
+Time for topKMatches("r", 4) -  1.4717518E-5
+Time for topKMatches("r", 7) -  1.2550279E-5
+Time for topKMatches("ro", 1) -  3.024848E-6
+Time for topKMatches("ro", 4) -  2.917878E-6
+Time for topKMatches("ro", 7) -  3.017388E-6
+Time for topKMatches("notarealword", 1) -  6.448336E-6
+Time for topKMatches("notarealword", 4) -  3.008107E-6
+Time for topKMatches("notarealword", 7) -  2.49431E-6
+
+BinarySearch for k=12
+
+Opening - /Users/rvonders/workspace/autocomplete/data/wiktionary.txt.
+Benchmarking BinarySearchAutocomplete...
+Found 10000 words
+Time to initialize - 0.03465723
+Time for topMatch("") - 7.1362645E-5
+Time for topMatch("robe") - 8.216891E-6
+Time for topMatch("r") - 8.6713E-6
+Time for topMatch("ro") - 7.810528E-6
+Time for topMatch("notarealword") - 3.370287E-6
+Time for topKMatches("", 1) -  6.0279363E-4
+Time for topKMatches("", 4) -  4.83935385E-4
+Time for topKMatches("", 7) -  4.30903738E-4
+Time for topKMatches("robe", 1) -  5.851839E-6
+Time for topKMatches("robe", 4) -  2.339232E-6
+Time for topKMatches("robe", 7) -  2.278993E-6
+Time for topKMatches("r", 1) -  2.927795E-5
+Time for topKMatches("r", 4) -  2.6672989E-5
+Time for topKMatches("r", 7) -  1.7313809E-5
+Time for topKMatches("ro", 1) -  3.69227E-6
+Time for topKMatches("ro", 4) -  3.190091E-6
+Time for topKMatches("ro", 7) -  2.60868E-6
+Time for topKMatches("notarealword", 1) -  3.756114E-6
+Time for topKMatches("notarealword", 4) -  2.290592E-6
+Time for topKMatches("notarealword", 7) -  2.249609E-6
+
+Here, there is not very significant variation of the run time
+despite the successive doublings of the k value. Safe to conclude
+it is not a big contributor to the processing cost. 
+
+
+TrieAutocomplete for k=3
+
+Opening - /Users/rvonders/workspace/autocomplete/data/small.txt.
+Benchmarking TrieAutocomplete...
+Found 10 words
+Time to initialize - 0.001877883
+Created 89 nodes
+Time for topMatch("") - 5.374007E-6
+Time for topMatch("february 2.0") - 6.91984E-7
+Time for topMatch("f") - 2.04344E-6
+Time for topMatch("fe") - 2.729269E-6
+Time for topMatch("notarealword") - 2.85942E-7
+Time for topKMatches("", 1) -  2.1899511E-5
+Time for topKMatches("", 4) -  9.583932E-6
+Time for topKMatches("", 7) -  8.006695E-6
+Time for topKMatches("february 2.0", 1) -  1.053008E-6
+Time for topKMatches("february 2.0", 4) -  1.110403E-6
+Time for topKMatches("february 2.0", 7) -  1.008703E-6
+Time for topKMatches("f", 1) -  9.555315E-6
+Time for topKMatches("f", 4) -  3.484706E-6
+Time for topKMatches("f", 7) -  3.21676E-6
+Time for topKMatches("fe", 1) -  1.961131E-6
+Time for topKMatches("fe", 4) -  2.03394E-6
+Time for topKMatches("fe", 7) -  1.85773E-6
+Time for topKMatches("notarealword", 1) -  3.07927E-7
+Time for topKMatches("notarealword", 4) -  3.61891E-7
+Time for topKMatches("notarealword", 7) -  3.46632E-7
+
+TrieAutocomplete for k=6
+
+Opening - /Users/rvonders/workspace/autocomplete/data/small.txt.
+Benchmarking TrieAutocomplete...
+Found 10 words
+Time to initialize - 0.001717194
+Created 89 nodes
+Time for topMatch("") - 6.056068E-6
+Time for topMatch("february 2.0") - 1.195663E-6
+Time for topMatch("f") - 2.607373E-6
+Time for topMatch("fe") - 2.865607E-6
+Time for topMatch("notarealword") - 2.92251E-7
+Time for topKMatches("", 1) -  3.921036E-5
+Time for topKMatches("", 4) -  2.3866806E-5
+Time for topKMatches("", 7) -  1.1358792E-5
+Time for topKMatches("february 2.0", 1) -  8.44721E-7
+Time for topKMatches("february 2.0", 4) -  8.76813E-7
+Time for topKMatches("february 2.0", 7) -  8.31694E-7
+Time for topKMatches("f", 1) -  1.700776E-6
+Time for topKMatches("f", 4) -  3.240504E-6
+Time for topKMatches("f", 7) -  4.357549E-6
+Time for topKMatches("fe", 1) -  5.080324E-6
+Time for topKMatches("fe", 4) -  3.057467E-6
+Time for topKMatches("fe", 7) -  2.636302E-6
+Time for topKMatches("notarealword", 1) -  4.52845E-7
+Time for topKMatches("notarealword", 4) -  4.66828E-7
+Time for topKMatches("notarealword", 7) -  5.21344E-7
+
+
+TrieAutocomplete for k=12
+
+Opening - /Users/rvonders/workspace/autocomplete/data/small.txt.
+Benchmarking TrieAutocomplete...
+Found 10 words
+Time to initialize - 0.00143012
+Created 89 nodes
+Time for topMatch("") - 4.916472E-6
+Time for topMatch("february 2.0") - 6.9167E-7
+Time for topMatch("f") - 2.162193E-6
+Time for topMatch("fe") - 1.370872E-6
+Time for topMatch("notarealword") - 1.84435E-7
+Time for topKMatches("", 1) -  5.4490364E-5
+Time for topKMatches("", 4) -  2.6567775E-5
+Time for topKMatches("", 7) -  1.9121692E-5
+Time for topKMatches("february 2.0", 1) -  1.345285E-6
+Time for topKMatches("february 2.0", 4) -  1.288989E-6
+Time for topKMatches("february 2.0", 7) -  1.692037E-6
+Time for topKMatches("f", 1) -  3.26905E-6
+Time for topKMatches("f", 4) -  3.524302E-6
+Time for topKMatches("f", 7) -  2.538892E-6
+Time for topKMatches("fe", 1) -  1.880788E-6
+Time for topKMatches("fe", 4) -  2.151955E-6
+Time for topKMatches("fe", 7) -  3.148118E-6
+Time for topKMatches("notarealword", 1) -  3.52175E-7
+Time for topKMatches("notarealword", 4) -  3.50066E-7
+Time for topKMatches("notarealword", 7) -  3.58441E-7
+
+Here as well, the run times do not vary significantly as we change k. 
+
+
+
+Data for Question 3:
+
+BruteForce:
+
+Opening - /Users/rvonders/workspace/autocomplete/data/small.txt.
+Benchmarking BruteAutocomplete...
+Found 10 words
+Time to initialize - 0.001489771
+Time for topMatch("") - 3.436863E-6
+Time for topMatch("february 2.0") - 5.86925E-7
+Time for topMatch("f") - 5.53856E-7
+Time for topMatch("fe") - 6.67117E-7
+Time for topMatch("notarealword") - 6.82086E-7
+Time for topKMatches("", 1) -  1.4825596E-5
+Time for topKMatches("", 4) -  2.209468E-6
+Time for topKMatches("", 7) -  1.840903E-6
+Time for topKMatches("february 2.0", 1) -  7.61942E-7
+Time for topKMatches("february 2.0", 4) -  7.60819E-7
+Time for topKMatches("february 2.0", 7) -  7.45497E-7
+Time for topKMatches("f", 1) -  9.22403E-7
+Time for topKMatches("f", 4) -  7.72644E-7
+Time for topKMatches("f", 7) -  7.28866E-7
+Time for topKMatches("fe", 1) -  7.21542E-7
+Time for topKMatches("fe", 4) -  8.48679E-7
+Time for topKMatches("fe", 7) -  8.30174E-7
+Time for topKMatches("notarealword", 1) -  6.97484E-7
+Time for topKMatches("notarealword", 4) -  7.02018E-7
+Time for topKMatches("notarealword", 7) -  6.59725E-7
+
+BinarySearch:
+
+Opening - /Users/rvonders/workspace/autocomplete/data/small.txt.
+Benchmarking BinarySearchAutocomplete...
+Found 10 words
+Time to initialize - 0.002250075
+Time for topMatch("") - 5.757643E-6
+Time for topMatch("february 2.0") - 9.61449E-7
+Time for topMatch("f") - 2.093395E-6
+Time for topMatch("fe") - 1.766058E-6
+Time for topMatch("notarealword") - 7.71279E-7
+Time for topKMatches("", 1) -  9.303128E-6
+Time for topKMatches("", 4) -  4.762266E-6
+Time for topKMatches("", 7) -  4.824685E-6
+Time for topKMatches("february 2.0", 1) -  9.75772E-7
+Time for topKMatches("february 2.0", 4) -  1.037892E-6
+Time for topKMatches("february 2.0", 7) -  8.73715E-7
+Time for topKMatches("f", 1) -  3.257051E-6
+Time for topKMatches("f", 4) -  1.882908E-6
+Time for topKMatches("f", 7) -  1.550443E-6
+Time for topKMatches("fe", 1) -  9.037212E-6
+Time for topKMatches("fe", 4) -  2.581706E-6
+Time for topKMatches("fe", 7) -  2.050869E-6
+Time for topKMatches("notarealword", 1) -  6.52288E-7
+Time for topKMatches("notarealword", 4) -  6.02824E-7
+Time for topKMatches("notarealword", 7) -  6.10563E-7
+
+
+Bruteforce outperforms binarysearch on the smaller file with the 
+shorter prefixes. 
+
+
+
+Data for Question 4: 
+
+Bruteforce:
+
+Opening - /Users/rvonders/workspace/autocomplete/data/fourletterwords.txt.
+Benchmarking BruteAutocomplete...
+Found 456976 words
+Time to initialize - 0.015744427
+Time for topMatch("") - 0.004918763869
+Time for topMatch("nenk") - 0.006694918962516733
+Time for topMatch("n") - 0.0066527773896276595
+Time for topMatch("ne") - 0.006874190221153846
+Time for topMatch("notarealword") - 0.005277834587552743
+Time for topKMatches("", 1) -  0.006690335311497327
+Time for topKMatches("", 4) -  0.006472666322121604
+Time for topKMatches("", 7) -  0.006847624079343365
+Time for topKMatches("nenk", 1) -  0.008551512345299146
+Time for topKMatches("nenk", 4) -  0.00834125494
+Time for topKMatches("nenk", 7) -  0.008231066289473685
+Time for topKMatches("n", 1) -  0.008738910640488656
+Time for topKMatches("n", 4) -  0.008045787591639871
+Time for topKMatches("n", 7) -  0.008115246907617503
+Time for topKMatches("ne", 1) -  0.00796932230732484
+Time for topKMatches("ne", 4) -  0.008014838862179487
+Time for topKMatches("ne", 7) -  0.008616118337349397
+Time for topKMatches("notarealword", 1) -  0.007720511770061728
+Time for topKMatches("notarealword", 4) -  0.00764402198778626
+Time for topKMatches("notarealword", 7) -  0.007596835993930197
+
+
+Opening - /Users/rvonders/workspace/autocomplete/data/fourletterwordshalf.txt.
+Benchmarking BruteAutocomplete...
+Found 228488 words
+Time to initialize - 0.012754509
+Time for topMatch("") - 0.001519094711
+Time for topMatch("aenk") - 0.001799434419
+Time for topMatch("a") - 0.001757462913
+Time for topMatch("ae") - 0.001828814878
+Time for topMatch("notarealword") - 0.001540670687
+Time for topKMatches("", 1) -  0.001837311739
+Time for topKMatches("", 4) -  0.001739395442
+Time for topKMatches("", 7) -  0.001708546773
+Time for topKMatches("aenk", 1) -  0.002290417138
+Time for topKMatches("aenk", 4) -  0.002264363815
+Time for topKMatches("aenk", 7) -  0.002211424628
+Time for topKMatches("a", 1) -  0.002261706876
+Time for topKMatches("a", 4) -  0.002286238832
+Time for topKMatches("a", 7) -  0.002333009761
+Time for topKMatches("ae", 1) -  0.002315099166
+Time for topKMatches("ae", 4) -  0.002276910478
+Time for topKMatches("ae", 7) -  0.002202672501
+Time for topKMatches("notarealword", 1) -  0.00206505988
+Time for topKMatches("notarealword", 4) -  0.002105977419
+Time for topKMatches("notarealword", 7) -  0.002029280297
+
+
+Binarysearch:
+
+Opening - /Users/rvonders/workspace/autocomplete/data/fourletterwords.txt.
+Benchmarking BinarySearchAutocomplete...
+Found 456976 words
+Time to initialize - 0.050458804
+Time for topMatch("") - 9.73094138E-4
+Time for topMatch("nenk") - 1.1512589E-5
+Time for topMatch("n") - 4.1615645E-5
+Time for topMatch("ne") - 2.804481E-6
+Time for topMatch("notarealword") - 5.748662E-6
+Time for topKMatches("", 1) -  0.024381945029126214
+Time for topKMatches("", 4) -  0.022458918147982062
+Time for topKMatches("", 7) -  0.023286228739534884
+Time for topKMatches("nenk", 1) -  1.331666E-6
+Time for topKMatches("nenk", 4) -  1.633525E-6
+Time for topKMatches("nenk", 7) -  1.92144E-6
+Time for topKMatches("n", 1) -  6.95732307E-4
+Time for topKMatches("n", 4) -  6.48222434E-4
+Time for topKMatches("n", 7) -  7.0835764E-4
+Time for topKMatches("ne", 1) -  1.351477E-5
+Time for topKMatches("ne", 4) -  1.3795014E-5
+Time for topKMatches("ne", 7) -  1.3329947E-5
+Time for topKMatches("notarealword", 1) -  6.43456E-7
+Time for topKMatches("notarealword", 4) -  6.27012E-7
+Time for topKMatches("notarealword", 7) -  6.22789E-7
+
+Opening - /Users/rvonders/workspace/autocomplete/data/fourletterwordshalf.txt.
+Benchmarking BinarySearchAutocomplete...
+Found 228488 words
+Time to initialize - 0.028032824
+Time for topMatch("") - 5.17385823E-4
+Time for topMatch("aenk") - 9.044188E-6
+Time for topMatch("a") - 3.6055937E-5
+Time for topMatch("ae") - 2.511613E-6
+Time for topMatch("notarealword") - 4.489538E-6
+Time for topKMatches("", 1) -  0.009244244798892989
+Time for topKMatches("", 4) -  0.008498957331069609
+Time for topKMatches("", 7) -  0.00840540511092437
+Time for topKMatches("aenk", 1) -  1.178961E-6
+Time for topKMatches("aenk", 4) -  1.047521E-6
+Time for topKMatches("aenk", 7) -  9.29518E-7
+Time for topKMatches("a", 1) -  6.29356348E-4
+Time for topKMatches("a", 4) -  6.66463839E-4
+Time for topKMatches("a", 7) -  6.68685459E-4
+Time for topKMatches("ae", 1) -  1.1586116E-5
+Time for topKMatches("ae", 4) -  1.4219943E-5
+Time for topKMatches("ae", 7) -  1.1710883E-5
+Time for topKMatches("notarealword", 1) -  5.29536E-7
+Time for topKMatches("notarealword", 4) -  5.02951E-7
+Time for topKMatches("notarealword", 7) -  4.98675E-7
+
+
+Trie:
+
+Opening - /Users/rvonders/workspace/autocomplete/data/fourletterwords.txt.
+Benchmarking TrieAutocomplete...
+Found 456976 words
+Time to initialize - 0.114493545
+Created 475255 nodes
+Time for topMatch("") - 2.90411E-6
+Time for topMatch("nenk") - 3.36481E-7
+Time for topMatch("n") - 2.659349E-6
+Time for topMatch("ne") - 2.14887E-6
+Time for topMatch("notarealword") - 5.96006E-7
+Time for topKMatches("", 1) -  4.7771171E-5
+Time for topKMatches("", 4) -  2.0803603E-5
+Time for topKMatches("", 7) -  1.3580323E-5
+Time for topKMatches("nenk", 1) -  4.63312E-7
+Time for topKMatches("nenk", 4) -  4.36396E-7
+Time for topKMatches("nenk", 7) -  7.90287E-7
+Time for topKMatches("n", 1) -  9.592953E-6
+Time for topKMatches("n", 4) -  1.0821717E-5
+Time for topKMatches("n", 7) -  1.3365571E-5
+Time for topKMatches("ne", 1) -  4.373902E-6
+Time for topKMatches("ne", 4) -  4.79947E-6
+Time for topKMatches("ne", 7) -  4.353722E-6
+Time for topKMatches("notarealword", 1) -  3.47053E-7
+Time for topKMatches("notarealword", 4) -  3.04856E-7
+Time for topKMatches("notarealword", 7) -  3.10216E-7
+
+Opening - /Users/rvonders/workspace/autocomplete/data/fourletterwordshalf.txt.
+Benchmarking TrieAutocomplete...
+Found 228488 words
+Time to initialize - 0.069782363
+Created 237628 nodes
+Time for topMatch("") - 3.227146E-6
+Time for topMatch("aenk") - 3.28434E-7
+Time for topMatch("a") - 1.575931E-6
+Time for topMatch("ae") - 1.473065E-6
+Time for topMatch("notarealword") - 1.89591E-7
+Time for topKMatches("", 1) -  4.4449875E-5
+Time for topKMatches("", 4) -  1.7920456E-5
+Time for topKMatches("", 7) -  9.882248E-6
+Time for topKMatches("aenk", 1) -  5.18869E-7
+Time for topKMatches("aenk", 4) -  4.33819E-7
+Time for topKMatches("aenk", 7) -  8.12675E-7
+Time for topKMatches("a", 1) -  8.312953E-6
+Time for topKMatches("a", 4) -  8.200278E-6
+Time for topKMatches("a", 7) -  8.166902E-6
+Time for topKMatches("ae", 1) -  5.115069E-6
+Time for topKMatches("ae", 4) -  5.191198E-6
+Time for topKMatches("ae", 7) -  6.060918E-6
+Time for topKMatches("notarealword", 1) -  2.57688E-7
+Time for topKMatches("notarealword", 4) -  2.48066E-7
+Time for topKMatches("notarealword", 7) -  2.48286E-7
+
