@@ -27,7 +27,7 @@ Not sure of the order of the output for trie autocomplete
  **********************************************************************/
 
 With the aid of piazza, my man Efe Aras, and the universe's gentle hand
-this is now done. I appreciate the extension as well
+this is now done.
 
 /**********************************************************************
  *  List any other comments here.                                     
